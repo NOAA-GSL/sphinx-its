@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: sphinx-data-pvc
+  namespace: sphinx-its
+spec:
+  accessModes:
+    - ReadWriteOnce
+  storageClassName: vastdata-filesystem
+  resources:
+    requests:
+      storage: 10Gi

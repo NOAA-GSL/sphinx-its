@@ -1,0 +1,28 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: sphinx-its
+  namespace: sphinx-its
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: sphinx-its
+  template:
+    metadata:
+      labels:
+        app: sphinx-its
+    spec:
+      containers:
+      - name: sphinx-site
+        image: ghcr.io/YOUR-GITHUB-USERNAME-OR-ORG/sphinx-its:latest
+        imagePullPolicy: Always
+        ports:
+        - containerPort: 80
+        volumeMounts:
+        - name: storage-volume
+          mountPath: /usr/share/nginx/html/data
+      volumes:
+      - name: storage-volume
+        persistentVolumeClaim:
+          claimName: sphinx-data-pvc
