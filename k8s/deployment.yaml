@@ -13,6 +13,8 @@ spec:
       labels:
         app: sphinx-its
     spec:
+      imagePullSecrets:
+      - name: ghcr-secret
       containers:
       - name: sphinx-site
         image: ghcr.io/noaa-gsl/sphinx-its:latest
