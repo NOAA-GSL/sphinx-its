@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: sphinx-site
-        image: ghcr.io/YOUR-GITHUB-USERNAME-OR-ORG/sphinx-its:latest
+        image: image: ghcr.io/noaa-gsl/sphinx-its:latest
         imagePullPolicy: Always
         ports:
         - containerPort: 80
