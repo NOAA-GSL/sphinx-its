@@ -76,7 +76,7 @@ How to Reference Subfolder Pages in index.rst
 
 When referencing a file inside a subfolder in your index.rst toctree, use relative pathing without the .rst extension:
 
-Code snippet
+```Code snippet
 .. toctree::
    :maxdepth: 2
    :caption: Documentation Sections:
@@ -84,7 +84,7 @@ Code snippet
    overview
    user-guides/github-ui
    user-guides/troubleshooting
-   architecture/kubernetes-cluster
+   architecture/kubernetes-cluster```
 
 **Step 3: Trigger the live deployment**
 1. Open the **Actions** tab and confirm **Build and Push Docker Image** finishes with a green checkmark.
