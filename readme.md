@@ -76,7 +76,11 @@ Sphinx only shows pages that are listed in the `toctree` in `index.rst`.
 
 When referencing a file inside a subfolder in your `index.rst` toctree, use relative pathing without the `.rst` extension:
 
+<<<<<<< HEAD
 ```rst
+=======
+```Code snippet
+>>>>>>> 64d853f997cf75c7d75bc30530877106e048f30f
 .. toctree::
    :maxdepth: 2
    :caption: Documentation Sections:
@@ -84,8 +88,12 @@ When referencing a file inside a subfolder in your `index.rst` toctree, use rela
    overview
    user-guides/github-ui
    user-guides/troubleshooting
+<<<<<<< HEAD
    architecture/kubernetes-cluster
 ```
+=======
+   architecture/kubernetes-cluster```
+>>>>>>> 64d853f997cf75c7d75bc30530877106e048f30f
 
 **Step 3: Trigger the live deployment**
 1. Open the **Actions** tab and confirm **Build and Push Docker Image** finishes with a green checkmark.
