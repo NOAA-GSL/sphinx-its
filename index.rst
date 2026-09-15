@@ -8,4 +8,4 @@ Welcome to the Information Technology Services (ITS) documentation portal.
    :maxdepth: 2
    :caption: Contents:
 
-   overview Renn
+   overview 
