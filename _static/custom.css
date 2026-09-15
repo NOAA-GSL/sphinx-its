@@ -21,14 +21,18 @@
 }
 
 /* NOAA + GSL logos side by side in the upper-left of the sidebar */
-.its-logo-link {
-    display: flex;
+.wy-side-nav-search .its-logo-link {
+    display: flex !important;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
     gap: 12px;
     padding: 14px 10px;
 }
-.its-logo {
-    height: 42px;
-    width: auto;
+.wy-side-nav-search .its-logo-link img.its-logo {
+    display: inline-block !important;
+    height: 42px !important;
+    width: auto !important;
+    max-width: 60px;
+    flex: 0 0 auto;
 }
