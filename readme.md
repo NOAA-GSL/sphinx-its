@@ -72,11 +72,11 @@ Sphinx only shows pages that are listed in the `toctree` in `index.rst`.
    ```
 3. Click **Commit changes...** and confirm the commit to `main`.
 
-How to Reference Subfolder Pages in index.rst
+**How to Reference Subfolder Pages in `index.rst`**
 
-When referencing a file inside a subfolder in your index.rst toctree, use relative pathing without the .rst extension:
+When referencing a file inside a subfolder in your `index.rst` toctree, use relative pathing without the `.rst` extension:
 
-Code snippet
+```rst
 .. toctree::
    :maxdepth: 2
    :caption: Documentation Sections:
@@ -85,6 +85,7 @@ Code snippet
    user-guides/github-ui
    user-guides/troubleshooting
    architecture/kubernetes-cluster
+```
 
 **Step 3: Trigger the live deployment**
 1. Open the **Actions** tab and confirm **Build and Push Docker Image** finishes with a green checkmark.
