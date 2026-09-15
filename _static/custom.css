@@ -1,0 +1,34 @@
+/* Widen the sidebar so full navigation labels/titles are not cut off */
+.wy-nav-side {
+    width: 320px;
+}
+.wy-nav-content-wrap {
+    margin-left: 320px;
+}
+.wy-side-scroll {
+    width: 320px;
+}
+@media screen and (min-width: 768px) {
+    .wy-nav-side {
+        width: 320px;
+    }
+    .wy-nav-content-wrap {
+        margin-left: 320px;
+    }
+}
+.wy-nav-content {
+    max-width: none;
+}
+
+/* NOAA + GSL logos side by side in the upper-left of the sidebar */
+.its-logo-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    padding: 14px 10px;
+}
+.its-logo {
+    height: 42px;
+    width: auto;
+}
