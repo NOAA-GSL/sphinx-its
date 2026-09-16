@@ -170,14 +170,14 @@ flowchart LR
 
 ## 4. Live Site Access
 
-* **NOAA internal network:** `http://k8s-dev-w1.gsd.esrl.noaa.gov:30080` (any cluster worker node + port `30080` works)
-* **Local tunnel (port-forward):**
+* **NOAA internal network:** `its.gsl.noaa.gov` 
+* **Local cloudflare tunnel routes the application via (port-forward):**
 
   ```bash
   kubectl port-forward svc/sphinx-its-svc 8080:80 -n sphinx-its --context=dev-b1
   ```
 
-  Then browse to `http://localhost:8080`.
+  If you run the container locally browse to `http://localhost:8080`.
 
 ---
 
