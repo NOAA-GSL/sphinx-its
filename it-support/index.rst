@@ -6,3 +6,5 @@ IT Support
    :alt: IT Support
 
 .. Add IT support contact info / ticketing instructions here help.ssg.gsl@noaa.gov.
+
+Teamwork makes the dream work!
